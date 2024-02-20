@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Banana-Papaya Experiment</title>
+    <script src="index.js"></script>
+    <link href="index.css" rel="stylesheet"></link>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <h1>Calculator</h1>
+            <img src="./calculator.png" alt="">
+        </header>
+    </div>
+    <center>
+        <h2>The Banana-Papaya Experiment</h2>
+        <div class="main">
+            <div class="selected">
+                <p class="bigSelected">Selected Temperature Unit:</p>
+                <p class="smallSelected">Temperature:&nbsp;</p>
+                <button onclick="Kelvin()"><span>Kelvin</span><sup></button>
+                <p class="colon">,</p>
+                <button onclick="Celcius()"><span>Celcius</span>&nbsp;<sup>*</button>
+                <p class="colon">,</p>
+                <button onclick="Farenheit()"><span>Farenheit</span>&nbsp;<sup>*</button>
+            </div>
+            <div class="input-main">
+                <label for="fname">B1 = </label>
+                <input type="text" id="B1" name="B1" >
+                <p>(Bananas)<x/p>
+            </div>
+            <div class="input-main">
+                <label for="fname">B2 = </label>
+                <input type="text" id="B2" name="B2">
+                <p>(Bananas)</p>
+            </div>
+            <div class="input-main">
+                <label for="fname">P1 = </label>
+                <input type="text" id="P1" name="P1">
+                <p>(Papayas)</p>
+            </div>
+            <div class="input-main">
+                <label for="fname">P2 = </label>
+                <input type="text" id="P2" name="P2">
+                <p>(Papayas)</p>
+            </div>
+            <div class="input-main">
+                <label for="fname" id="ndegree1">K1 = </label>
+                <input type="text" id="K1" name="K1">
+                <p id="degree1">(Kelvin)</p>
+            </div>
+            <div class="input-main">
+                <label for="fname" id="ndegree2">K2 = </label>
+                <input type="text" id="K2" name="K2">
+                <p id="degree2">(Kelvin)</p>
+            </div>
+            <button class="btnC" onclick="calculate()">Calculate</button>
+            <button class="btn" onclick="clear_input()">Clear</button>
+        </div>
+        <h4># Nudhana Sarutipaisan 66130500843</h4>
+    </center>
+    <p class="footer">* The result still error because of the calculation formula.</p>
+    <p class="footer">- Feature : Responsive Design, Change the Temperature unit with hover and changing the type behind input box, Calculare and Clear Button with hover, Aleart when press Clear button but not have data, Answer return as a Red number and Clear the input when press clear.</p>
+    <hr>
+</body>
+
+</html>
