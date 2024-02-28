@@ -13,7 +13,6 @@ function calculate(){
     if(P2 == "") count++;
     if(K1 == "") count++;
     if(K2 == "") count++;
-
     if(count > 1){
         alert("Please fill the number");
         return;
